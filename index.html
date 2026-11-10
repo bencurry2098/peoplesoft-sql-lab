@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PeopleSoft SQL Lab</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="btn menu-button" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  <a class="brand" href="#home"><span class="brand-long">PeopleSoft </span>SQL Lab</a>
+  <div class="labdate" id="labdate-wrap">
+    <label for="labdate"><span>Lab date</span></label>
+    <input type="date" id="labdate" min="2020-01-01" max="2030-12-31" aria-label="Lab date used as SYSDATE">
+    <button class="btn quiet" id="labdate-reset" hidden>Reset</button>
+  </div>
+  <div class="progress-chip" id="progress"></div>
+</header>
+<div class="layout">
+  <nav class="nav" id="nav" aria-label="Course"></nav>
+  <main class="main" id="main">
+    <p class="loading">Building the practice database.</p>
+  </main>
+</div>
+<script src="vendor/sql-asm.js"></script>
+<script src="js/schema.js"></script>
+<script src="js/seed.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/course.js"></script>
+<script src="js/lessons-1.js"></script>
+<script src="js/lessons-2.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
